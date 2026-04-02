@@ -58,7 +58,7 @@ This experiment measures performance when the arrays are nearly sorted.
 - Choosing the right algorithm depends on the structure of the input data
 
 ## How to use-
--### Example command
+### Example command
 
 ```bash
 python run_experiments.py -a 1 2 5 -s 100 500 3000 -e 1 -r 20
