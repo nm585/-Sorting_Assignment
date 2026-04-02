@@ -1,4 +1,4 @@
-## Student Name(s)
+## Student Name
 Nevo Marmelshtein
 
 ## Selected Algorithms
