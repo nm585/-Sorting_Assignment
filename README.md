@@ -56,3 +56,27 @@ This experiment measures performance when the arrays are nearly sorted.
 - For random arrays Quick Sort and Merge Sort perform best  
 - For nearly sorted arrays Insertion Sort improves significantly  
 - Choosing the right algorithm depends on the structure of the input data
+
+## How to use-
+-### Example command
+
+```bash
+python run_experiments.py -a 1 2 5 -s 100 500 3000 -e 1 -r 20
+```
+
+### Your interface must allow the user to choose:
+
+- Which algorithms to compare (`-a`)
+- Array sizes (`-s`)
+- Experiment type / noise level (`-e`)
+  - 1 – Nearly sorted with 5% noise
+  - 2 – Nearly sorted with 20% noise
+- Number of repetitions (`-r`)
+
+### Algorithm IDs
+
+- 1 – Bubble Sort
+- 2 – Selection Sort
+- 3 – Insertion Sort
+- 4 – Merge Sort
+- 5 – Quick Sort
