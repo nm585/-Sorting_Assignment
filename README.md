@@ -32,7 +32,7 @@ This experiment measures the running time of the algorithms on random arrays.
 - **Selection Sort** also shows quadratic behavior and performs slightly better than Insertion Sort in this experiment.
 - **Merge Sort** performs efficiently and follows \(O(n \log n)\) behavior, making it the fastest algorithm among the three.
 
-<img width="640" height="480" alt="Random Arrays Graph" src="https://github.com/user-attachments/assets/550e6fd7-d003-4755-a036-2a9c11246b98" />
+<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/f666ba28-d335-4678-a74b-90db5d2d72fd" />
 
 ---
 
@@ -44,7 +44,7 @@ This experiment measures the running time of the algorithms on nearly sorted arr
 - **Selection Sort** does not improve much, since its running time is still based on repeatedly scanning the unsorted part of the array.
 - **Merge Sort** remains stable and efficient, and is still the fastest algorithm in this experiment.
 
-<img width="640" height="480" alt="Nearly Sorted Arrays Graph" src="https://github.com/user-attachments/assets/1aac49f7-b4ff-4408-99c5-72f721590fca" />
+<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/0fbfb95e-ddf7-4e9b-81a3-7a35749b4981" />
 
 ---
 
