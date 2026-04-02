@@ -29,6 +29,7 @@ This experiment measures the running time of the algorithms on random arrays.
 - **Insertion Sort** is the slowest algorithm and its running time increases rapidly, consistent with its O(n²) complexity.
 - **Merge Sort** performs efficiently and follows O(n log n) behavior.
 - **Quick Sort** is the fastest in practice among the tested algorithms.
+<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/550e6fd7-d003-4755-a036-2a9c11246b98" />
 
 ---
 
@@ -39,6 +40,7 @@ This experiment measures performance when the arrays are nearly sorted.
 - **Insertion Sort** improves significantly compared to the random case.
 - **Merge Sort** remains stable and efficient.
 - **Quick Sort** is still the fastest algorithm.
+<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/1aac49f7-b4ff-4408-99c5-72f721590fca" />
 
 ---
 
