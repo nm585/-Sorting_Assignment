@@ -2,21 +2,23 @@
 Nevo Marmelshtein
 
 ## Selected Algorithms
+- Selection Sort
 - Insertion Sort
 - Merge Sort
-- Quick Sort
 
 ---
 
-## Run comend
+## Run Command
 
-python3 run_experiments.py -a 3 4 5 -s 100 500 1000 3000 -e 1 -r 20
+```bash
+python run_experiments.py -a 2 3 4 -s 100 500 1000 3000 -e 1 -r 20
+```
 
 ## Arguments Explanation
-- -a  Algorithms (3 = Insertion, 4 = Merge, 5 = Quick)
-- -s  Array sizes
-- -e  Experiment type (1 = nearly sorted, 5% noise)
-- -r  Number of repetitions
+- `-a` → Algorithms (2 = Selection, 3 = Insertion, 4 = Merge)
+- `-s` → Array sizes
+- `-e` → Experiment type (1 = nearly sorted, 5% noise)
+- `-r` → Number of repetitions
 
 ---
 
@@ -26,62 +28,70 @@ python3 run_experiments.py -a 3 4 5 -s 100 500 1000 3000 -e 1 -r 20
 
 This experiment measures the running time of the algorithms on random arrays.
 
-- **Insertion Sort** is the slowest algorithm and its running time increases rapidly, consistent with its O(n²) complexity.
-- **Merge Sort** performs efficiently and follows O(n log n) behavior.
-- **Quick Sort** is the fastest in practice among the tested algorithms.
-<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/550e6fd7-d003-4755-a036-2a9c11246b98" />
+- **Insertion Sort** is the slowest algorithm and its running time increases rapidly, consistent with its \(O(n^2)\) complexity.
+- **Selection Sort** also shows quadratic behavior and performs slightly better than Insertion Sort in this experiment.
+- **Merge Sort** performs efficiently and follows \(O(n \log n)\) behavior, making it the fastest algorithm among the three.
+
+<img width="640" height="480" alt="Random Arrays Graph" src="https://github.com/user-attachments/assets/550e6fd7-d003-4755-a036-2a9c11246b98" />
 
 ---
 
 ### Result 2 – Nearly Sorted Arrays (5% noise)
 
-This experiment measures performance when the arrays are nearly sorted.
+This experiment measures the running time of the algorithms on nearly sorted arrays.
 
-- **Insertion Sort** improves significantly compared to the random case.
-- **Merge Sort** remains stable and efficient.
-- **Quick Sort** is still the fastest algorithm.
-<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/1aac49f7-b4ff-4408-99c5-72f721590fca" />
+- **Insertion Sort** improves significantly compared to the random case, because it performs better when the input is close to sorted.
+- **Selection Sort** does not improve much, since its running time is still based on repeatedly scanning the unsorted part of the array.
+- **Merge Sort** remains stable and efficient, and is still the fastest algorithm in this experiment.
+
+<img width="640" height="480" alt="Nearly Sorted Arrays Graph" src="https://github.com/user-attachments/assets/1aac49f7-b4ff-4408-99c5-72f721590fca" />
 
 ---
 
 ### Explanation of Change
 
-- **Insertion Sort** improves because the array is almost sorted, so only a few elements need to be moved.
-- **Merge Sort** and **Quick Sort** are less affected by the initial order of the array, so their performance remains relatively stable.
+- **Insertion Sort** improves because the array is almost sorted, so fewer element shifts are required.
+- **Selection Sort** changes much less, because it still performs the same repeated minimum searches regardless of the initial order.
+- **Merge Sort** is less affected by input order, so its performance remains relatively stable.
 
 ---
 
 ## Conclusion
 
-- For random arrays Quick Sort and Merge Sort perform best  
-- For nearly sorted arrays Insertion Sort improves significantly  
-- Choosing the right algorithm depends on the structure of the input data
+- For random arrays, **Merge Sort** performs best.
+- For nearly sorted arrays, **Insertion Sort** improves significantly.
+- **Selection Sort** remains relatively slow in both experiments.
+- Choosing the right algorithm depends on the structure of the input data.
 
-## How to use-
-### Example command windows
+---
+
+## How to Use
+
+### Example Command (Windows)
 
 ```bash
-python run_experiments.py -a 1 2 5 -s 100 500 3000 -e 1 -r 20
+python run_experiments.py -a 2 3 4 -s 100 500 1000 3000 -e 1 -r 20
 ```
-### Example command macos
+
+### Example Command (macOS)
 
 ```bash
-python3 run_experiments.py -a 1 2 5 -s 100 500 3000 -e 1 -r 20
+python3 run_experiments.py -a 2 3 4 -s 100 500 1000 3000 -e 1 -r 20
 ```
 
-### Your interface must allow the user to choose:
+### The Interface Allows the User to Choose
 
 - Which algorithms to compare (`-a`)
 - Array sizes (`-s`)
 - Experiment type / noise level (`-e`)
-  - 1 – Nearly sorted with 5% noise
-  - 2 – Nearly sorted with 20% noise
+  - `1` – Nearly sorted with 5% noise
+  - `2` – Nearly sorted with 20% noise
 - Number of repetitions (`-r`)
 
 ### Algorithm IDs
 
-- 1 – Bubble Sort
-- 2 – Selection Sort
-- 3 – Insertion Sort
-- 4 – Merge Sort
-- 5 – Quick Sort
+- `1` – Bubble Sort
+- `2` – Selection Sort
+- `3` – Insertion Sort
+- `4` – Merge Sort
+- `5` – Quick Sort
