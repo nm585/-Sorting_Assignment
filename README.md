@@ -29,9 +29,9 @@ python run_experiments.py -a 2 3 4 -s 100 500 1000 3000 -e 1 -r 20
 
 This experiment measures the running time of the algorithms on random arrays.
 
-- **Insertion Sort** is the slowest algorithm and its running time increases rapidly, consistent with its \(O(n^2)\) complexity.
-- **Selection Sort** also shows quadratic behavior and performs slightly better than Insertion Sort in this experiment.
-- **Merge Sort** performs efficiently and follows \(O(n \log n)\) behavior, making it the fastest algorithm among the three.
+- **Insertion Sort** is the slowest algorithm in this experiment, with running time reaching about **0.18 seconds** for the largest input size. Its average and worst-case time complexity are **O(n²)**.
+- **Selection Sort** also shows quadratic growth, reaching about **0.16 seconds** for the largest input size. Its time complexity is **O(n²)**.
+- **Merge Sort** performs much more efficiently, with running time staying around **0.006 seconds** even for the largest input. Its time complexity is **O(n log n)**.
 
 
 ---
@@ -41,27 +41,21 @@ This experiment measures the running time of the algorithms on random arrays.
 
 This experiment measures the running time of the algorithms on nearly sorted arrays.
 
-- **Insertion Sort** improves significantly compared to the random case, because it performs better when the input is close to sorted.
-- **Selection Sort** does not improve much, since its running time is still based on repeatedly scanning the unsorted part of the array.
-- **Merge Sort** remains stable and efficient, and is still the fastest algorithm in this experiment.
-
-
----
+- **Insertion Sort** improves significantly compared to the random case, with running time reaching only about **0.023 seconds** for the largest input. Its best-case time complexity is **O(n)**, although its worst case is still **O(n²)**.
+- **Selection Sort** does not improve much, and its running time still reaches about **0.156 seconds** for the largest input. Its time complexity remains **O(n²)**.
+- **Merge Sort** remains stable and efficient, with running time staying around **0.005–0.006 seconds**. Its time complexity is **O(n log n)**.
 
 ### Explanation of Change
 
-- **Insertion Sort** improves because the array is almost sorted, so fewer element shifts are required.
-- **Selection Sort** changes much less, because it still performs the same repeated minimum searches regardless of the initial order.
-- **Merge Sort** is less affected by input order, so its performance remains relatively stable.
+- **Insertion Sort** improves because the array is almost sorted, so fewer shifts are needed. In such cases, it can get closer to its best-case behavior of **O(n)**.
+- **Selection Sort** changes very little, because it still performs the same repeated scans regardless of the initial order.
+- **Merge Sort** is less affected by input order, so its running time remains relatively stable.
 
----
+### Conclusion
 
-## Conclusion
-
-- For random arrays, **Merge Sort** performs best.
-- For nearly sorted arrays, **Insertion Sort** improves significantly.
+- For **random arrays**, **Merge Sort** performs best.
+- For **nearly sorted arrays**, **Insertion Sort** improves significantly, but **Merge Sort** still has the lowest running time overall.
 - **Selection Sort** remains relatively slow in both experiments.
-- Choosing the right algorithm depends on the structure of the input data.
 
 ---
 
