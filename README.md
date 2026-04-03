@@ -25,6 +25,7 @@ python run_experiments.py -a 2 3 4 -s 100 500 1000 3000 -e 1 -r 20
 ## Results
 
 ### Result 1 – Random Arrays
+<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/6b6d613e-2410-43d0-be34-9623ac7eb7dd" />
 
 This experiment measures the running time of the algorithms on random arrays.
 
@@ -32,11 +33,11 @@ This experiment measures the running time of the algorithms on random arrays.
 - **Selection Sort** also shows quadratic behavior and performs slightly better than Insertion Sort in this experiment.
 - **Merge Sort** performs efficiently and follows \(O(n \log n)\) behavior, making it the fastest algorithm among the three.
 
-<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/f666ba28-d335-4678-a74b-90db5d2d72fd" />
 
 ---
 
 ### Result 2 – Nearly Sorted Arrays (5% noise)
+<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/34431899-897f-4c64-a543-001117ca5929" />
 
 This experiment measures the running time of the algorithms on nearly sorted arrays.
 
@@ -44,7 +45,6 @@ This experiment measures the running time of the algorithms on nearly sorted arr
 - **Selection Sort** does not improve much, since its running time is still based on repeatedly scanning the unsorted part of the array.
 - **Merge Sort** remains stable and efficient, and is still the fastest algorithm in this experiment.
 
-<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/0fbfb95e-ddf7-4e9b-81a3-7a35749b4981" />
 
 ---
 
