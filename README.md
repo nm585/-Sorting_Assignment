@@ -41,7 +41,7 @@ This experiment measures the running time of the algorithms on random arrays.
 
 This experiment measures the running time of the algorithms on nearly sorted arrays.
 
-- **Insertion Sort** improves significantly compared to the random case, with running time reaching only about **~0.023 seconds** for the largest input. Its best-case time complexity is **O(n)**, although its worst case is still **O(n²)**.
+- **Insertion Sort** improves significantly compared to the random case, with running time reaching only about **~0.023 seconds** for the largest input. Its best-case time complexity is **O(n)**, although its worst case is still **O(n)**.
 - **Selection Sort** does not improve much, and its running time still reaches about **~0.156 seconds** for the largest input. Its time complexity remains **O(n²)**.
 - **Merge Sort** remains stable and efficient, with running time staying around **~0.005–0.006 seconds**. Its time complexity is **O(n log n)**.
 
