@@ -29,9 +29,9 @@ python run_experiments.py -a 2 3 4 -s 100 500 1000 3000 -e 1 -r 20
 
 This experiment measures the running time of the algorithms on random arrays.
 
-- **Insertion Sort** is the slowest algorithm in this experiment, with running time reaching about **0.18 seconds** for the largest input size. Its average and worst-case time complexity are **O(n²)**.
-- **Selection Sort** also shows quadratic growth, reaching about **0.16 seconds** for the largest input size. Its time complexity is **O(n²)**.
-- **Merge Sort** performs much more efficiently, with running time staying around **0.006 seconds** even for the largest input. Its time complexity is **O(n log n)**.
+- **Insertion Sort** is the slowest algorithm in this experiment, with running time reaching about **~0.18 seconds** for the largest input size. Its average and worst-case time complexity are **O(n²)**.
+- **Selection Sort** also shows quadratic growth, reaching about **~0.16 seconds** for the largest input size. Its time complexity is **O(n²)**.
+- **Merge Sort** performs much more efficiently, with running time staying around **~0.006 seconds** even for the largest input. Its time complexity is **O(n log n)**.
 
 
 ---
@@ -41,9 +41,9 @@ This experiment measures the running time of the algorithms on random arrays.
 
 This experiment measures the running time of the algorithms on nearly sorted arrays.
 
-- **Insertion Sort** improves significantly compared to the random case, with running time reaching only about **0.023 seconds** for the largest input. Its best-case time complexity is **O(n)**, although its worst case is still **O(n²)**.
-- **Selection Sort** does not improve much, and its running time still reaches about **0.156 seconds** for the largest input. Its time complexity remains **O(n²)**.
-- **Merge Sort** remains stable and efficient, with running time staying around **0.005–0.006 seconds**. Its time complexity is **O(n log n)**.
+- **Insertion Sort** improves significantly compared to the random case, with running time reaching only about **~0.023 seconds** for the largest input. Its best-case time complexity is **O(n)**, although its worst case is still **O(n²)**.
+- **Selection Sort** does not improve much, and its running time still reaches about **~0.156 seconds** for the largest input. Its time complexity remains **O(n²)**.
+- **Merge Sort** remains stable and efficient, with running time staying around **~0.005–0.006 seconds**. Its time complexity is **O(n log n)**.
 
 ### Explanation of Change
 
